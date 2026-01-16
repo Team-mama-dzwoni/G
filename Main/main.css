@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
-/*---Responsivity and basics---*/
+
+        /*---Responsivity and basics---*/
+
 :root {
     --bg: #232323;
     --primary1: #270707;
@@ -25,7 +27,8 @@ body {
 }
 
 
-/*----- HEADER -----*/
+            /*----- HEADER -----*/
+
 header {
     display: flex;
     flex-direction: column;
@@ -109,6 +112,7 @@ header div {
     font-size: 3em;
     color: var(--accent);
     text-shadow: 0.4rem 0.3rem 0.3rem var(--accent2);
+    font-family: "Zalando Sans Expanded", sans-serif;
 }
 
 .icons {
@@ -131,6 +135,7 @@ header div {
 .icon svg {
     margin: 0.3rem;
     cursor: pointer;
+    user-select: none;
 }
 .search-bar{
     width: 0;
@@ -150,7 +155,8 @@ header div {
     justify-content: flex-end;
 }
 
-/*POSTS*/
+            /*POSTS*/
+
 #posts_holder {
     width: 100%;
     display: flex;
