@@ -2,17 +2,14 @@
 
 /*Burger menu*/
 .burger_menu.active span:nth-child(1) {
-    transform-origin: 0 0;
-    transform: translate(20%, 0) rotate(45deg);
+    transform: translate(0, 200%) rotate(45deg);
 }
 .burger_menu.active span:nth-child(2) {
-
     transform: rotate(45deg);
     opacity: 20%;
 }
 .burger_menu.active span:nth-child(3) {
-    transform-origin: 0 0;
-    transform: translate(10%, 75%)  rotate(-45deg);
+    transform: translate(0, -200%)  rotate(-45deg);
 }
 
 /*Menu div*/
