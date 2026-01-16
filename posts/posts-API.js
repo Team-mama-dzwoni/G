@@ -1,3 +1,4 @@
+// Shows posts
 fetch('posts.php')
     .then(response => response.json())
     .then(data => {

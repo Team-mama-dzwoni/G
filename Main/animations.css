@@ -1,0 +1,27 @@
+        /*-----Menu-----*/
+
+/*Burger menu*/
+.burger_menu.active span:nth-child(1) {
+    transform-origin: 0 0;
+    transform: translate(15px, 0) rotate(45deg);
+}
+.burger_menu.active span:nth-child(2) {
+
+    transform: rotate(45deg);
+    opacity: 20%;
+}
+.burger_menu.active span:nth-child(3) {
+    transform-origin: 0 0;
+    transform: translate(7px, 7px)  rotate(-45deg);
+}
+
+/*Menu div*/
+.off-screen-menu.active {
+    left: -1px;
+}
+
+/*Search bar*/
+.search-bar.active {
+    display: flex;
+    width: auto;
+}
