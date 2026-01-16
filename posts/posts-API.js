@@ -1,10 +1,18 @@
 // Shows posts
-fetch('posts.php')
-    .then(response => response.json())
+fetch('../posts/posts.php')
+    .then(response => {
+            return response.json();
+        }
+    )
     .then(data => {
-        const body = document.querySelector('body');
+        const postsHTML = document.querySelector("#posts")
         data.forEach(post => {
-            body.innerHTML += `${post.nickname} ${post.profile_pic} ${post.content} ${post.image} ${post.link} ${post.video} ${post.likes} ${post.views} ${post.date_of_creation}`;
+            postsHTML.innerHTML += `
+            <div class="post">
+                <h1>${post.nickname}</h1>
+                <h2>${post.content}</h2>
+                <p>(Placeholder)</p>
+            </div>`
 
         })
     })

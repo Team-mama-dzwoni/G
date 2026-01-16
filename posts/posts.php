@@ -1,4 +1,3 @@
-<!--Gets posts data from database-->
 <?php
 //Database connection
 try {
