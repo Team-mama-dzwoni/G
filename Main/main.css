@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 
-        /*---Responsivity and basics---*/
+/*---Responsivity and basics---*/
 
 :root {
     --bg: #232323;
@@ -27,7 +27,7 @@ body {
 }
 
 
-            /*----- HEADER -----*/
+/*----- HEADER -----*/
 
 header {
     display: flex;
@@ -104,11 +104,12 @@ header div {
     font-size: 2rem;
     transition: 0.3s ease;
 }
+
 .off-screen-menu ul {
     list-style-type: none;
 }
 
-#logo p{
+#logo p {
     font-size: 3em;
     color: var(--accent);
     text-shadow: 0.4rem 0.3rem 0.3rem var(--accent2);
@@ -124,6 +125,7 @@ header div {
     padding: 0 5rem 0 0;
     gap: 0 1rem;
 }
+
 .icon {
     border: 0.2rem solid var(--accent2);
     border-radius: 2em;
@@ -132,12 +134,14 @@ header div {
     transition: 0.3s ease;
     height: fit-content;
 }
+
 .icon svg {
     margin: 0.3rem;
     cursor: pointer;
     user-select: none;
 }
-.search-bar{
+
+.search-bar {
     width: 0;
 
     display: none;
@@ -150,12 +154,13 @@ header div {
     height: 3rem;
     transition: width 0.3s ease;
 }
+
 #search {
     display: flex;
     justify-content: flex-end;
 }
 
-            /*POSTS*/
+/*POSTS*/
 
 #posts_holder {
     width: 100%;
@@ -179,4 +184,29 @@ header div {
     border: 2px solid white;
     border-radius: 1rem;
     width: 40vw;
+}
+.comments {
+    border: 1px solid white;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+}
+.comment, .comment-reply {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+#posts h3 {
+    font-size: 1.5em;
+}
+
+.pfp {
+    border: 1px solid white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
 }
