@@ -20,6 +20,7 @@ Promise.all([
                     if (comment.parent_id == null) {
                         postsHTML.innerHTML += `
                         <div class="comment">
+                            <div class="pfp"></div>
                             <h3>${comment.nickname}</h3>
                             <p>${comment.content}</p>
                         </div>`
@@ -29,6 +30,7 @@ Promise.all([
                             if (reply.parent_id === comment.id) {
                                 postsHTML.innerHTML += `
                                     <div class="comment-reply">
+                                        <div class="pfp"></div>
                                         <h3 style="color:red">${reply.nickname}</h3>
                                         <p>${reply.content}</p>
                                     </div>`
