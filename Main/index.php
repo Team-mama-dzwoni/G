@@ -98,14 +98,6 @@
     </section>
 </section>
 
-<!--    DO ZROBIENIA:
-    - naprawic burger menu
-    - zrobic aby dzialala animacja searchbara
-    - znalezc gdzie jest blad z poziomym scrollbarem na dole
-    - zmiana logo
-    - wysuwanie notifications i profil (podobnie do menu ale od gory do dolu)
- -->
-
 <script src="functionality.js"></script>
 </body>
 </html>
