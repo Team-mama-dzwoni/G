@@ -3,12 +3,24 @@
 
 /*---Responsivity and basics---*/
 
+/*     Old colors    */
+/*--bg: #232323;*/
+/*--primary1: #270707;*/
+/*--primary2: #FFFFFF;*/
+/*--accent: #F96868;*/
+/*--accent2: #933333;*/
+
 :root {
-    --bg: #232323;
-    --primary1: #270707;
+    --bg: #05030A;
+    --bg-second: #933333;
+
+    --primary1: #501f11;
     --primary2: #FFFFFF;
-    --accent: #F96868;
-    --accent2: #933333;
+
+    --accent-clr: #F96868;
+    --accent-hover: #FF4949;
+    --accent-dark: #353535;
+    --accent-light: #C4C2C2;
 }
 
 * {
@@ -49,7 +61,7 @@ header div {
 
 .top.bar {
     display: grid;
-    grid-template-columns: 5fr 1fr 5fr;
+    grid-template-columns: 6fr 1fr 6fr;
     grid-template-rows: 1fr;
     place-items: center;
 }
@@ -71,20 +83,21 @@ header div {
 }
 
 .burger_menu {
-    height: 100%;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 0.2rem;
+    gap: 0.6rem;
     cursor: pointer;
 }
 
 .burger_menu span {
     height: 0.6rem;
     border-radius: 1rem;
-    width: 4rem;
-    background-color: var(--accent2);
+    width: 4.5rem;
+    background-color: var(--accent-clr);
+    border: 0.15rem solid white;
     transition: 0.3s ease;
 }
 
@@ -111,8 +124,8 @@ header div {
 
 #logo p {
     font-size: 3em;
-    color: var(--accent);
-    text-shadow: 0.4rem 0.3rem 0.3rem var(--accent2);
+    color: var(--accent-clr);
+    text-shadow: 0.4rem 0.3rem 0.3rem var(--accent-dark);
     font-family: "Zalando Sans Expanded", sans-serif;
 }
 
@@ -122,12 +135,12 @@ header div {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0 5rem 0 0;
+    margin: 0 2rem 0 0;
     gap: 0 1rem;
 }
 
 .icon {
-    border: 0.2rem solid var(--accent2);
+    border: 0.2rem solid var(--accent-clr);
     border-radius: 2em;
     display: flex;
     align-items: center;
