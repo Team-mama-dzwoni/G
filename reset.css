@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif ;
+}
+
+html {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+body {
+    background-color: var(--bg-clr);
+}
+
+:root {
+    --white: #fff;
+    --bg-clr: #05030A;
+    --acc-clr: #F96868;
+    --acc-hover: #ff4949;
+    --acc-dark: #353535;
+    --acc-light: #C4C2C2;
+
+    --input-radius: 0.3125rem;
+
+    font-size: clamp(18px, 1.5vw, 18px);
+}
+
+h1, h2, h3, h4, h5, h6,
+p, pre,
+label, input, button, select, option,
+span, div,
+a {
+    font-weight: inherit;
+    font-size: inherit;
+    color: var(--white);
+}
+
+svg {
+    display: block;
+}
+
+select {
+    appearance: none;        /* standard */
+    -webkit-appearance: none; /* Chrome, Safari */
+    -moz-appearance: none;    /* Firefox */
+}
+
+button, input, select, a {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
